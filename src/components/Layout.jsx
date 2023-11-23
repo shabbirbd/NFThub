@@ -5,7 +5,9 @@ const Layout = ({children}) => {
     return (
         <>
             <Navbar/>
-            {children}
+            <div className='border-2 border-slate-600 container mx-auto'>
+                {children}
+            </div>
         </>
     );
 };
