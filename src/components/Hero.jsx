@@ -3,7 +3,7 @@ import HeroSlider from './HeroSlider';
 
 const Hero = () => {
     return (
-        <div className='lg:py-24 py-16 lg:px-24 md:px-8 px-5 md:rounded-lg flex flex-col lg:flex-row items-center gap-10 bg-violet-700/10'>
+        <div className='lg:py-24 py-16 lg:px-24 md:px-8 px-5 md:rounded-lg flex flex-col lg:flex-row items-center justify-center gap-10 bg-violet-700/10'>
             <div className=''>
                 <h2 className='font-bold lg:leading-snug text-4xl lg:text-6xl mb-4'>
                     <span className='bg-gradient-to-l from-red-600 to-violet-600 text-transparent bg-clip-text'>Buy, sell, </span>
@@ -18,9 +18,10 @@ const Hero = () => {
                 </div>
             </div>
 
-            <div className='lg:max-w-lg md:max-w-md max-w-sm  relative'>
+            <div className='xl:max-w-lg lg:max-w-lg md:max-w-md sm:max-w-sm max-w-sm relative '>
                 <HeroSlider/>
             </div>
+
         </div>
     );
 };
