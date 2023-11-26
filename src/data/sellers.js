@@ -13,7 +13,7 @@ import nft9 from '../assets/nft9.jpg';
 export const sellers = [
     {
         name: "Jason Moreno",
-        username: "@Jindab",
+        username: "@Jindab ",
         avater: nft1
     },
     {
