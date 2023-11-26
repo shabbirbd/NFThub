@@ -7,7 +7,7 @@ import TopSellers from '../components/TopSellers';
 
 const Home = () => {
     return (
-        <Layout>
+        <Layout container>
             <Hero/>
             <TopSellers/>
             <Process/>
