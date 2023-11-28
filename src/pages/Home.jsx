@@ -1,4 +1,5 @@
 import React from 'react';
+import Featured from '../components/Featured';
 import Hero from '../components/Hero';
 import Layout from '../components/Layout';
 import NftSlider from '../components/NftSlider';
@@ -10,8 +11,9 @@ const Home = () => {
         <Layout container>
             <Hero/>
             <TopSellers/>
-            <Process/>
             <NftSlider/>
+            <Process/>
+            <Featured/>
         </Layout>
     );
 };

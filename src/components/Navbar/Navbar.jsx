@@ -13,7 +13,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className='border-b border-slate-200 py-4'>
+        <nav className='border-b border-slate-200 py-4 sticky top-0 bg-white z-50'>
             <div className='border-2 border-red-300 container mx-auto flex items-center justify-between px-8'>
                 <a href="/" className=''>
                     <img src={logo} alt="logo" className='w-16'/>
