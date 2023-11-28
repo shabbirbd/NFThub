@@ -6,7 +6,7 @@ import SellerCard from './SellerCard';
 
 const TopSellers = () => {
     return (
-        <div className='border-2 border-green-400 w-11/12 mx-auto py-14'>
+        <div className=' w-11/12 mx-auto py-14'>
             <div className='md:flex justify-between items-center px-10'>
                 <div className="md:w-10/12 md:text-start text-center">
                     <h3 className="md:text-[30px] text-[26px] font-semibold mb-4">Best Creators & Sellers of 

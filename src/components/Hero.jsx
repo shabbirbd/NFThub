@@ -3,7 +3,7 @@ import HeroSlider from './HeroSlider';
 
 const Hero = () => {
     return (
-        <div className='border-2 border-yellow-500 '>
+        <div className=''>
             <div className='lg:py-24 py-16 lg:px-24 md:px-8 px-5 md:rounded-lg flex flex-col lg:flex-row items-center justify-center gap-10 bg-violet-700/10'>
                 <div className=''>
                     <h2 className='font-bold lg:leading-snug text-4xl lg:text-6xl mb-4'>

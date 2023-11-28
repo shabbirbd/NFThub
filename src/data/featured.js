@@ -2,6 +2,7 @@ import avater from '../assets/avater.png';
 import banner1 from '../assets/banner1.jpg';
 import banner2 from '../assets/banner2.jpg';
 import banner3 from '../assets/banner3.jpg';
+import banner4 from '../assets/banner4.jpg';
 import nft1 from '../assets/nft1.jpg';
 import nft2 from '../assets/nft2.jpg';
 import nft3 from '../assets/nft3.jpg';
@@ -39,11 +40,11 @@ export const featured = [
         images: [nft7, nft8, nft9]
     },
     {
-        title: "Art me outside",
+        title: "Fly Dragon",
         author: "Bill Frok",
         avater: avater,
         quantity: "6k",
-        banner: banner1,
+        banner: banner4,
         images: [nft1, nft2, nft3]
     },
 ]
