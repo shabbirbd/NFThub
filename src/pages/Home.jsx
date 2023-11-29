@@ -1,4 +1,5 @@
 import React from 'react';
+import Auction from '../components/Auction';
 import Featured from '../components/Featured';
 import Hero from '../components/Hero';
 import Layout from '../components/Layout';
@@ -14,6 +15,7 @@ const Home = () => {
             <NftSlider/>
             <Process/>
             <Featured/>
+            <Auction/>
         </Layout>
     );
 };
