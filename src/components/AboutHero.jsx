@@ -6,8 +6,8 @@ import nft3 from '../assets/nft3.jpg';
 
 const AboutHero = () => {
     return (
-        <div className='container mx-auto border-2 border-slate-600 py-10 grid grid-cols-1 lg:grid-cols-2'>
-            <div className='p-6'>
+        <div className='container mx-auto border-2 border-slate-600 py-10 grid grid-cols-1 lg:grid-cols-2 justify-items-center'>
+            <div className='p-6 max-w-xl'>
                 <img src={nft3} alt="about" className='w-full object-cover rounded-2xl border-l-8 border-b-8 border-violet-600/60 duration-500 hover:scale-95 hover:border-red-500' />
             </div>
 
