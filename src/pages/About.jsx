@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutHero from '../components/AboutHero';
 import Layout from '../components/Layout';
 import RouteHead from '../components/RouteHead';
 
@@ -8,7 +9,7 @@ const About = () => {
     return (
         <Layout >
             <RouteHead data={routeData}/>
-            
+            <AboutHero/>
         </Layout>
     );
 };
