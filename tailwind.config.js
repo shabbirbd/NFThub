@@ -21,6 +21,9 @@ export default {
           },
         },
       },
+      backgroundImage: {
+        "routeHeader": "url(./src/assets/bg.jpg)"
+      }
     },
   },
   plugins: [],

@@ -14,9 +14,9 @@ const Newsletter = () => {
 
             <div className="sm:flex justify-between items-center sm:border-2 rounded-md lg:w-6/12 md:w-8/12 mx-auto border-indigo-500 border-3">
                   <form className="sm:flex items-center sm:flex-auto px-2 py-2 leading-none" action="#">
-                     <input className="sm:appearance-none border-2 rounded-md w-full border-violet-600  px-6 py-3 sm:py-0  sm:rounded-0 text-slate-600 sm:outline-none font-normal text-base sm:border-0 " type="text" placeholder="Email Address"/>
+                     <input className="sm:appearance-none border-2 rounded-md w-full border-violet-600  px-6 py-3 sm:py-0  sm:rounded-0 text-slate-600 sm:outline-none bg-transparent font-normal text-base sm:border-0 " type="text" placeholder="Email Address"/>
                      <div className="subscribe-button mt-4 sm:mt-0">
-                        <button className="py-4 sm:py-4 text-base block w-full text-center sm:w-auto font-medium leading-none  transition duration-500 hover:opacity-60 rounded-md px-6 bg-violet-600 text-white ">Subscribe</button>
+                        <button className="py-4 sm:py-4 text-base block w-full text-center sm:w-auto font-medium leading-none  transition duration-500 hover:opacity-80 rounded-md px-6 bg-violet-600 text-white ">Subscribe</button>
                      </div>
                   </form>
                </div>
