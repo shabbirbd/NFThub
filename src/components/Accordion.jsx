@@ -18,7 +18,7 @@ const Accordion = ({data, index, activeIndex, handleIndex}) => {
             {
                 isActive && 
                 <div className='px-5 bg-slate-100/50 pt-0'>
-                    <p className='max-w-2xl py-5 text-slate-400'>{data.answer}</p>
+                    <p className='max-w-2xl w-full py-5 text-slate-400'>{data.answer}</p>
                 </div>
             }
         </div>
