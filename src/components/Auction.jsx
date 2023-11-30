@@ -8,7 +8,7 @@ import nft5 from '../assets/nft5.jpg';
 
 const Auction = () => {
     return (
-        <div className='border-2 border-green-400 container relative flex flex-col items-center space-y-10'>
+        <div className='container relative flex flex-col items-center space-y-10'>
             <h2 className='font-bold text-3xl md:text-4xl'>Most Liked Auction</h2>
 
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 md:p-10 lg:p-14'>
