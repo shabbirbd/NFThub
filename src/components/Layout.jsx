@@ -6,7 +6,7 @@ const Layout = ({children, container}) => {
     return (
         <>
             <Navbar/>
-            <div className={`border-2 border-green-300 bg-gradient-to-l from-white via-[#F5E9F1] to-white space-y-10 mx-auto ${container ? "container" : "w-full"}`}>
+            <div className={`border-2 border-green-300 bg-gradient-to-l h-auto from-white via-[#F5E9F1] to-white space-y-10 mx-auto ${container ? "container" : "w-full"}`}>
                 {children}
             </div>
             <Footer/>
