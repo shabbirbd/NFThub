@@ -26,7 +26,7 @@ const Process = () => {
 
     
     return (
-        <div className=' w-11/12 mx-auto '>
+        <div className='w-11/12 mx-auto '>
             <div className="grid grid-cols-1 text-center">
                 <h3 className="mb-4 md:text-4xl text-3xl md:leading-snug leading-snug font-semibold">Giglink is a web3 destination.</h3>
 

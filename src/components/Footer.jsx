@@ -30,7 +30,7 @@ const Footer = () => {
     ]
 
     return (
-        <footer className='border-t border-slate-300'>
+        <footer className='border-t border-slate-200 bg-gradient-to-l from-white via-[#F5E9F1] to-white'>
             <div className='container mx-auto'>
                 <div className='grid grid-cols-6 gap-x-7 gap-y-14 pt-24 pb-12 md:grid-cols-12 px-6 md:px-8 lg:px-14'>
                     <div className='col-span-3 md:col-span-4'>
