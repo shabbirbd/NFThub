@@ -21,7 +21,7 @@ const QNA = () => {
             </div>
 
             <div className='flex justify-center mt-10'>
-                <div className=' lg:w-2/3 w-full px-3 h-auto relative'>
+                <div className='lg:w-2/3 w-full px-3 h-auto relative'>
                     {
                         qna?.map((item, i)=>(
                             <Accordion data={item} key={i} index={i} activeIndex={activeIndex} handleIndex={handleIndex}/>

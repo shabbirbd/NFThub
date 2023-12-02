@@ -1,6 +1,7 @@
 import React from 'react';
 import ContactHero from '../components/ContactHero';
 import Layout from '../components/Layout';
+import Newsletter from '../components/Newsletter';
 import RouteHead from '../components/RouteHead';
 import SendMessage from '../components/SendMessage';
 
@@ -12,6 +13,7 @@ const Contact = () => {
             <RouteHead data={routeData}/>
             <ContactHero/>
             <SendMessage/>
+            <Newsletter/>
         </Layout>
     );
 };
