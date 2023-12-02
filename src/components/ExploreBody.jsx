@@ -6,6 +6,7 @@ import { IoGameController } from "react-icons/io5";
 import { MdOutlineOndemandVideo } from 'react-icons/md';
 import { PiPaintBrushBold } from "react-icons/pi";
 import { nfts } from '../data/nfts';
+import NftCard from './NftCard';
 
 
 
@@ -79,6 +80,14 @@ const ExploreBody = () => {
                             {item.icon}
                             <span className='px-2'>{item.title}</span>
                         </p>
+                    ))
+                }
+            </div>
+
+            <div className='border-2 border-red-600 mt-10 w-11/12 h-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
+                {
+                    items?.map((item, i)=>(
+                        <NftCard data={item} key={i}/>
                     ))
                 }
             </div>
