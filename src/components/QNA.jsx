@@ -14,7 +14,7 @@ const QNA = () => {
     }
 
     return (
-        <div className=' container'>
+        <div className=' container mx-auto'>
             <div className='grid grid-cols-1 text-center'>
                 <h3 className="mb-4 md:text-4xl text-3xl md:leading-snug leading-snug font-semibold dark:text-white">Q&A</h3>
                 <p className="text-slate-400 max-w-xl mx-auto">We are a huge marketplace dedicated to connecting great artists of all Giglink with their fans and unique token collectors!</p>
