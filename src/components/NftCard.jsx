@@ -1,7 +1,9 @@
 import React from 'react';
 import { BsLightningFill } from "react-icons/bs";
+import { FaEthereum } from "react-icons/fa";
 import { FaPlus } from "react-icons/fa6";
 import avater from "../assets/avater.png";
+
 
 
 
@@ -23,7 +25,28 @@ const NftCard = ({data}) => {
 
             <div className='flex flex-row items-center mt-6 relative'>
                 <img src={avater} alt="avater" className='h-10 w-10 object-cover rounded-full'/>
-                <p>{data.author}</p>
+                <p className='text-slate-500 px-3'>{data.author}</p>
+            </div>
+
+            <h2 className='mt-3 font-semibold'>{data.title}</h2>
+
+            <div className='flex flex-row items-center justify-between bg-slate-100 p-3 rounded-xl shadow mt-3'>
+                <div className='flex flex-col items-start'>
+                    <p className='text-slate-500'>Price</p>
+                    <p className='flex items-center'>
+                        <FaEthereum />
+                        <span>{data.price}</span>
+                        <span> ETH</span>
+                    </p>
+                </div>
+                <div className='flex flex-col juatify-start'>
+                    <p className='text-slate-500'>Highest Bid</p>
+                    <p className='flex items-center'>
+                        <FaEthereum />
+                        <span>{data.highBid}</span>
+                        <span> ETH</span>
+                    </p>
+                </div>
             </div>
             
         </div>

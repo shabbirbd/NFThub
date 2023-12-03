@@ -70,7 +70,7 @@ const ExploreBody = () => {
 
 
     return (
-        <div className='border-2 border-blue-600 container mx-auto'>
+        <div className='container mx-auto py-14 lg:py-24'>
             <div className=' w-full max-w-4xl px-5  mx-auto flex flex-wrap items-center justify-around'>
                 {
                     filters?.map((item, i)=>(
@@ -84,7 +84,7 @@ const ExploreBody = () => {
                 }
             </div>
 
-            <div className='border-2 border-red-600 mt-10 w-11/12 h-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
+            <div className='mt-10 w-11/12 h-full mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8'>
                 {
                     items?.map((item, i)=>(
                         <NftCard data={item} key={i}/>
