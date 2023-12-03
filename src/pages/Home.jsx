@@ -11,7 +11,7 @@ import TopSellers from '../components/TopSellers';
 
 const Home = () => {
     return (
-        <Layout container>
+        <Layout >
             <Hero/>
             <TopSellers/>
             <NftSlider/>

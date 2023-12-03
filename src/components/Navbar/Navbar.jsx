@@ -13,13 +13,13 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className='border-b border-slate-200 py-4 sticky top-0 bg-gradient-to-l from-white via-[#F5E9F1] to-white z-50'>
-            <div className='border-2 border-red-300 container mx-auto flex items-center justify-between px-8'>
+        <nav className='border-b border-slate-200 dark:border-slate-700 py-4 sticky top-0 bg-gradient-to-l dark:from-black dark:via-[#3E1E47] dark:to-black from-white via-[#F5E9F1] to-white z-50'>
+            <div className=' container mx-auto flex items-center justify-between px-8'>
                 <a href="/" className=''>
                     <img src={logo} alt="logo" className='w-16'/>
                 </a>
 
-                <ul className='border-2 border-slate-400 md:flex hidden justify-between w-full max-w-2xl px-8'>
+                <ul className=' md:flex hidden justify-between w-full max-w-2xl px-8'>
                     <Navlinks/>
                 </ul>
 
@@ -29,7 +29,7 @@ const Navbar = () => {
                 </ul>
 
                 <div className='flex space-x-3 items-center'>
-                    <a href="/" className='text-2xl'>
+                    <a href="/" className='text-2xl dark:text-white hover:text-violet-600 dark:hover:text-violet-600 duration-500'>
                         <FaWallet />    
                     </a>
                     <img src={avater} alt="avater" className='h-8 w-8 rounded-full object-cover' />

@@ -28,7 +28,7 @@ const Navlinks = () => {
         <>
             {
                 navlinks?.map((item, i)=>(
-                    <li key={i}>
+                    <li key={i} className='hover:text-violet-600 text-black dark:hover:text-violet-600 duration-500 font-semibold dark:text-white'>
                         <Link to={item.link}>{item.name}</Link>
                     </li>
                 ))

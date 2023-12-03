@@ -28,7 +28,7 @@ const Process = () => {
     return (
         <div className='w-11/12 mx-auto '>
             <div className="grid grid-cols-1 text-center">
-                <h3 className="mb-4 md:text-4xl text-3xl md:leading-snug leading-snug font-semibold">Giglink is a web3 destination.</h3>
+                <h3 className="mb-4 md:text-4xl text-3xl md:leading-snug leading-snug font-semibold dark:text-white">Giglink is a web3 destination.</h3>
 
                 <p className="text-slate-400 max-w-xl mx-auto">We are a huge marketplace dedicated to connecting great artists of all Giglink with their fans and unique token collectors!</p>
             </div>
@@ -44,7 +44,7 @@ const Process = () => {
                             </div>
 
                             <div className="mt-6">
-                                <a href="" className="text-lg h5 font-semibold transition duration-500 ease-in-out hover:text-violet-600">{item.title}</a>
+                                <a href="#" className="text-lg h5 font-semibold transition duration-500 ease-in-out dark:text-white hover:text-violet-600 dark:hover:text-violet-600">{item.title}</a>
                                 <p className="text-slate-400 transition duration-500 ease-in-out mt-3">{item.description}</p>
                             </div>
                         </div>

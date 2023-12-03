@@ -28,11 +28,11 @@ const ContactHero = () => {
         <div className='container mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 py-16'>
             {
                 contactData?.map((item, i)=>(
-                    <div className='flex flex-col items-center py-10 text-center'>
-                        <p className=' p-6 rounded-full shadow bg-violet-600/5 text-2xl font-bold text-violet-600'>
+                    <div className='flex flex-col items-center py-10 text-center' key={i}>
+                        <p className=' p-6 rounded-full shadow bg-violet-600/5 dark:shadow-white text-2xl font-bold text-violet-600'>
                             {item.icon}
                         </p>
-                        <h3 className='mt-10 text-xl font-semibold'>{item.title}</h3>
+                        <h3 className='mt-10 text-xl font-semibold dark:text-white'>{item.title}</h3>
                         <p className="text-slate-400 mt-3 max-w-xs">The phrasal sequence of the is now so that many campaign and benefit</p>
                         <a href="#" className='mt-3 font-semibold text-md text-violet-600 group'>
                             {item.contact}

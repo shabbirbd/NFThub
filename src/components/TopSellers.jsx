@@ -6,10 +6,10 @@ import SellerCard from './SellerCard';
 
 const TopSellers = () => {
     return (
-        <div className=' w-11/12 mx-auto py-14'>
+        <div className='w-11/12 mx-auto py-14'>
             <div className='md:flex justify-between items-center px-10'>
                 <div className="md:w-10/12 md:text-start text-center">
-                    <h3 className="md:text-[30px] text-[26px] font-semibold mb-4">Best Creators & Sellers of 
+                    <h3 className="md:text-[30px] text-[26px] font-semibold mb-4 dark:text-white">Best Creators & Sellers of 
                         <select className="z-2 text-violet-600 focus-visible:outline-none bg-transparent border-1 focus:ring-transparent" >
                             <option className="text-md font-medium">Week</option>
                             <option className="text-md font-medium">Month</option>
@@ -20,7 +20,7 @@ const TopSellers = () => {
                 </div>
 
                 <div className="md:w-2/12 md:block hidden ">
-                    <a href="#" className="text-[16px] flex items-center gap-5 font-medium  hover:text-violet-600 duration-500 ease-in-out">
+                    <a href="#" className="text-[16px] flex items-center gap-5 font-medium  dark:text-white dark:hover:text-violet-600 hover:text-violet-600 duration-500 ease-in-out">
                         All Creators <FaArrowRight /> 
                     </a>
                 </div>

@@ -6,7 +6,7 @@ import { MdVerified } from "react-icons/md";
 
 const SellerCard = ({seller}) => {
     return (
-        <div className="flex justify-between items-center p-3 rounded-md bg-white shadow">
+        <div className="flex justify-between items-center p-3 rounded-md bg-transparent shadow dark:shadow-white">
             <div className="flex items-center">
                 <div className="relative inline-block">
                     <img src={seller.avater} className="h-16 rounded-md" alt="avater"/>
@@ -14,12 +14,12 @@ const SellerCard = ({seller}) => {
                 </div>
 
                 <div className="ms-3">
-                    <a href="#" className="font-semibold block hover:text-violet-600">{seller.name}</a>
+                    <a href="#" className="font-semibold block hover:text-violet-600 dark:text-white duration-300">{seller.name}</a>
                     <span className="text-slate-400 text-sm block mt-0.5">{seller.username}</span>
                 </div>
             </div>
 
-            <a href="#" className="rounded-full border-2 border-green-400 cursor-pointer bg-violet-600/5 hover:bg-violet-600 border-violet-600/10 hover:border-violet-600 text-violet-600 hover:text-white p-2 duration-300">
+            <a href="#" className="rounded-full cursor-pointer shadow dark:shadow-white  hover:bg-violet-600 border-violet-600/10 hover:border-violet-600 text-violet-600 hover:text-white p-2 duration-300">
                 <FaUserPlus  className='text-lg'/>
             </a>
         </div>

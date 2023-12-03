@@ -13,7 +13,7 @@ const AboutHero = () => {
 
             <div className='px-6 py-10'>
                 <span className="text-violet-600 font-medium">Creative Vision & Mission</span>
-                <h3 className="mb-4 md:text-3xl text-2xl md:leading-snug leading-snug font-semibold">We develop & create <br/> digital art.</h3>
+                <h3 className="mb-4 md:text-3xl text-2xl md:leading-snug leading-snug font-semibold dark:text-white">We develop & create <br/> digital art.</h3>
                 <p className="text-slate-400 max-w-xl">We are a huge marketplace dedicated to connecting great artists of all Giglink with their fans and unique token collectors!</p>
                 <p className="text-slate-400 max-w-xl mt-4">It seems that only fragments of the original text remain in the Lorem Ipsum texts used today. One may speculate that over the course of time certain letters were added or deleted at various positions within the text. This might also explain why one can now find slightly different versions.</p>
                 <div className="mt-6">

@@ -8,13 +8,14 @@ import { PiPaintBrushBold } from "react-icons/pi";
 import { nfts } from '../data/nfts';
 import NftCard from './NftCard';
 
+const duration = 300;
 
 
 
 
 const ExploreBody = () => {
     const [filter, setFilter] = useState("All");
-    const [items, setItems] = useState([...nfts])
+    const [items, setItems] = useState([...nfts]);
 
     const filterItems = (category)=>{
         let filteredItems = [];
@@ -28,7 +29,6 @@ const ExploreBody = () => {
 
    
 
-    console.log(items)
 
     const filters = [
         {
@@ -70,12 +70,12 @@ const ExploreBody = () => {
 
 
     return (
-        <div className='container mx-auto py-14 lg:py-24'>
+        <div className='container mx-auto py-14 lg:py-16'>
             <div className=' w-full max-w-4xl px-5  mx-auto flex flex-wrap items-center justify-around'>
                 {
                     filters?.map((item, i)=>(
                         <p key={i}
-                         className={`border border-slate-200 px-3 py-1 shadow-md cursor-pointer text-slate-500 font-semibold duration-300 hover:text-violet-600 hover:border-violet-600 rounded-full flex items-center my-3 ${item.title === filter ? "border-violet-600" : ""} ${item.title === filter ? "text-violet-600" : ""}`} 
+                         className={`border border-slate-200 px-3 py-1 shadow cursor-pointer text-slate-400 font-semibold duration-300 hover:text-violet-600 hover:border-violet-600 rounded-full flex items-center my-3 ${item.title === filter ? "border-violet-600" : ""} ${item.title === filter ? "text-violet-600" : ""}`} 
                          onClick={()=> setFilter(item.title)}>
                             {item.icon}
                             <span className='px-2'>{item.title}</span>

@@ -9,29 +9,29 @@ import nft5 from '../assets/nft5.jpg';
 const Auction = () => {
     return (
         <div className='container relative flex flex-col items-center space-y-10'>
-            <h2 className='font-bold text-3xl md:text-4xl'>Most Liked Auction</h2>
+            <h2 className='font-bold text-3xl md:text-4xl dark:text-white'>Most Liked Auction</h2>
 
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 md:p-10 lg:p-14'>
-                <a href="#">
+                <a href="#" className='max-w-xl w-full justify-self-end'>
                     <img src={nft5} alt="auction" className='h-full w-full object-cover rounded-xl'/>
                 </a>
 
                 <div>
-                    <h5 className='font-semibold text-2xl mb-6'>Marching Struniawski</h5>
+                    <h5 className='font-semibold text-2xl mb-6 dark:text-white'>Marching Struniawski</h5>
 
                     <p className='text-md font-normal text-slate-500 leading-snug w-full max-w-2xl mb-10'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum.</p>
 
                     <div className='flex flex-nowrap space-x-3'>
                         <div className='flex flex-nowrap  space-x-3 items-center'>
                             <img src={nft1} alt="avater" className='h-10 w-10 object-cover rounded-full' />
-                            <div className='flex flex-col justify-center'>
+                            <div className='flex flex-col justify-center dark:text-white'>
                                 <p className='text-slate-500 font-bold'>Creator</p>
                                 <p className='font-base text-md'>0XANC1ΞX</p>
                             </div>
                         </div>
                         <div className='flex flex-nowrap  space-x-3 items-center'>
                             <img src={nft3} alt="avater" className='h-10 w-10 object-cover rounded-full' />
-                            <div className='flex flex-col justify-center'>
+                            <div className='flex flex-col justify-center dark:text-white'>
                                 <p className='text-slate-500 font-bold'>Creator</p>
                                 <p className='font-base text-md'>0XANC1ΞX</p>
                             </div>
@@ -61,7 +61,7 @@ const Auction = () => {
 
                         <div className='space-y-5'>
                             <p className='text-slate-400'>Current Bid</p>
-                            <div className='flex flex-nowrap items-center text-2xl font-bold'>
+                            <div className='flex flex-nowrap items-center text-2xl font-bold dark:text-white'>
                                 <p>
                                     <FaEthereum />
                                 </p>
@@ -71,11 +71,11 @@ const Auction = () => {
                     </div>
 
                     <div className='mt-5 flex items-center space-x-3'>
-                        <p className='border flex-shrink-0 border-slate-300 h-10 w-10 flex items-center justify-center rounded-full hover:bg-violet-600 hover:text-white duration-300'>
+                        <p className='border flex-shrink-0 border-slate-300 h-10 w-10 flex items-center justify-center rounded-full hover:bg-violet-600 hover:text-white duration-300 dark:text-white'>
                             <FaRegHeart />
                         </p>
                         <a href="#" className='w-full border border-slate-300 text-center py-2 rounded-full bg-violet-600 text-white'>Buy Now</a>
-                        <a href="#" className='w-full border border-slate-300 text-center py-2 rounded-full hover:bg-violet-600 hover:text-white duration-300'>Place Bid</a>
+                        <a href="#" className='w-full border border-slate-300 text-center py-2 rounded-full hover:bg-violet-600 hover:text-white dark:text-white dark:border-slate-700 duration-300'>Place Bid</a>
                     </div>
                 </div>
             </div>

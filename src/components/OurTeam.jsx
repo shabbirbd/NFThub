@@ -38,7 +38,7 @@ const OurTeam = () => {
         <div className='container mx-auto pt-16 lg:pt-24 pb-16'>
             <div className="grid grid-cols-1 pb-8 text-center">
                 <h6 className="text-violet-600 font-medium mb-2">Our Minds</h6>
-                <h3 className="mb-4 md:text-3xl text-2xl md:leading-snug leading-snug font-semibold">Management Team</h3>
+                <h3 className="mb-4 md:text-3xl text-2xl md:leading-snug leading-snug font-semibold dark:text-white">Management Team</h3>
 
                 <p className="text-slate-400 max-w-xl mx-auto">We are a huge marketplace dedicated to connecting great artists of all Giglink with their fans and unique token collectors!</p>
             </div>
@@ -72,7 +72,7 @@ const OurTeam = () => {
 
 
                                 <div className="content mt-3">
-                                    <a href="" className="text-lg font-semibold hover:text-violet-600 transition-all duration-500 ease-in-out">{item.name}</a>
+                                    <a href="" className="text-lg font-semibold hover:text-violet-600 transition-all duration-500 ease-in-out dark:text-white dark:hover:text-violet-600">{item.name}</a>
                                     <p className="text-slate-400">{item.title}</p>
                                 </div>
                             </div>
