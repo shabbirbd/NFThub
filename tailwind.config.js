@@ -23,7 +23,7 @@ export default {
         },
       },
       backgroundImage: {
-        "routeHeader": "url(./src/assets/bg.jpg)"
+        "routeHeader": "url(./assets/bg.jpg)"
       }
     },
   },

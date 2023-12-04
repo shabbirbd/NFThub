@@ -4,6 +4,7 @@ import { ImCross } from "react-icons/im";
 import { TiThMenuOutline } from "react-icons/ti";
 import avater from '../../assets/avater.png';
 import logo from '../../assets/logo.png';
+import ProfileCard from '../ProfileCard';
 import Navlinks from './Navlinks';
 
 
@@ -11,7 +12,8 @@ import Navlinks from './Navlinks';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false);
-
+    const [profileOpen, setProfileOpen] = useState(false)
+ 
     return (
         <nav className='border-b border-slate-200 dark:border-slate-700 py-4 sticky top-0 bg-gradient-to-l dark:from-black dark:via-[#3E1E47] dark:to-black from-white via-[#F5E9F1] to-white z-50'>
             <div className=' container mx-auto flex items-center justify-between px-8'>
@@ -32,8 +34,13 @@ const Navbar = () => {
                     <a href="/" className='text-2xl dark:text-white hover:text-violet-600 dark:hover:text-violet-600 duration-500'>
                         <FaWallet />    
                     </a>
-                    <img src={avater} alt="avater" className='h-8 w-8 rounded-full object-cover' />
-                    <button className='text-2xl md:hidden block z-50' onClick={()=>setOpen(!open)} >
+                    <div className='relative flex items-center justify-center ' onClick={()=>setProfileOpen(!profileOpen)}>
+                        <img src={avater} alt="avater" className='h-8 w-8 rounded-full object-cover cursor-pointer' />
+                        <div className={`shadow dark:shadow-slate-500 absolute transform translate-y-48 -translate-x-16 rounded-xl overflow-hidden  w-48 ${profileOpen ? "block" : "hidden"}`}>
+                            <ProfileCard/>
+                        </div>
+                    </div>
+                    <button className='text-2xl md:hidden block z-50 dark:text-white' onClick={()=>setOpen(!open)} >
                         {
                             open ? <ImCross /> : <TiThMenuOutline />
                         }
