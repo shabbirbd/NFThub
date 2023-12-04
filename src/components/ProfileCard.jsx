@@ -46,7 +46,7 @@ const ProfileCard = () => {
                         </span>
                         Settings
                     </p>
-                    <p className='w-full border-b border-slate-200 mt-3'></p>
+                    <p className='w-full border-b border-slate-200  dark:border-slate-700 mt-3'></p>
                     <p className='flex flex-row items-center px-3 my-1 cursor-pointer hover:text-violet-600 dark:text-white dark:hover:text-violet-600 text-sm font-semibold py-2'>
                         <span className='mr-2'>
                             <IoLogOutOutline />
