@@ -1,3 +1,4 @@
+import { ethers } from 'ethers';
 import React, { useEffect, useRef, useState } from 'react';
 import { FaWallet } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
@@ -14,9 +15,26 @@ import Navlinks from './Navlinks';
 const Navbar = () => {
     const [open, setOpen] = useState(false);
     const [profileOpen, setProfileOpen] = useState(false);
-
+    const [isConnected, setIsConnected] = useState(false);
+    const [signer, setSigner] = useState();
     const profileCardref = useRef(null);
     const profileIconref = useRef(null);
+
+    const walletConnect = async ()=>{
+        if(typeof window.ethereum !== undefined){
+            try{
+                await window.ethereum.request({method: "eth_requestAccounts"})
+                setIsConnected(true);
+                let connectedProvider = new ethers.providers.Web3Provider(window.ethereum)
+                setSigner(connectedProvider.getSigner())
+            } catch(e){
+                console.log("error:", e)
+            }
+        } else{
+            setIsConnected(false)
+        }
+    };
+
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -54,9 +72,9 @@ const Navbar = () => {
                 </ul>
 
                 <div className='flex space-x-3 items-center'>
-                    <a href="/" className='text-2xl dark:text-white hover:text-violet-600 dark:hover:text-violet-600 duration-500'>
+                    <button className='text-2xl dark:text-white hover:text-violet-600 dark:hover:text-violet-600 duration-500' onClick={()=> walletConnect()}>
                         <FaWallet />    
-                    </a>
+                    </button>
                     <div className='relative flex items-center justify-center ' onClick={()=>setProfileOpen(!profileOpen)} ref={profileIconref}>
                         <img src={avater} alt="avater" className='h-8 w-8 rounded-full object-cover cursor-pointer' />
                         <div className={`shadow dark:shadow-slate-500 absolute transform translate-y-48 -translate-x-16 rounded-xl overflow-hidden  w-48 ${profileOpen ? "block" : "hidden"} `} onClick={(e) => e.stopPropagation()} ref={profileCardref}>
